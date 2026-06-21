@@ -281,7 +281,7 @@ function Translator() {
       </h3>
 
       <p className="text-gray-300 mt-2">
-        Translation results will appear he
+        Translation results will appear here
       </p>
 
     </div>
