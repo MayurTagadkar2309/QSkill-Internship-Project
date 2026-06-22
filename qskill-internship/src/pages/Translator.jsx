@@ -23,19 +23,19 @@ function Translator() {
     setLoading(true);
 
     try {
-      const response = await fetch(
-        "http://localhost:5000/translate",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            text,
-            target: language,
-          }),
-        }
-      );
+     const response = await fetch(
+  "https://qskill-internship-project-1.onrender.com/translate",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      text,
+      target: language,
+    }),
+  }
+);
 
       const data = await response.json();
       setTranslated(data.translatedText);
